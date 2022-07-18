@@ -8,14 +8,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Assessment-2-Angular';
   username="";
-  buttonStatus=true;
+  buttonStatus=false;
 
   enableButton(){
     if(this.username.length>0){
-
+      this.buttonStatus=true;
+    }else{
+      this.buttonStatus=false;
     }
   }
   resetInput(){
     this.username="";
+    this.buttonStatus=false;
   }
 }
