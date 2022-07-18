@@ -10,14 +10,6 @@ export class AppComponent {
   username="";
   buttonStatus=false;
 
-  enableButton(event: Event){
-    length=((<HTMLInputElement>event.target).value).length;
-    if(length>0){
-      this.buttonStatus=true;
-    }else{
-      this.buttonStatus=false;
-    }
-  }
   resetInput(){
     this.username="";
     this.buttonStatus=false;
